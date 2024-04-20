@@ -5,7 +5,7 @@ import {AiOutlineSearch} from 'react-icons/ai'
 
 import Header from '../Header'
 
-import JobItem from '../JobItem'
+import JobItemDetails from '../JobItemDetails'
 import './index.css'
 
 const employmentTypesList = [
@@ -259,7 +259,7 @@ class AllJobs extends Component {
     ) : (
       <ul className="ul-job-items-container">
         {jobsData.map(eachItem => (
-          <JobItem key={eachItem.id} jobData={eachItem} />
+          <JobItemDetails key={eachItem.id} jobData={eachItem} />
         ))}
       </ul>
     )
