@@ -1,6 +1,6 @@
 import {BsSearch} from 'react-icons/bs'
 
-import ProfileDetails from '../ProfileDetails'
+import ProfileCard from '../ProfileDetails'
 
 const FiltersGroup = props => {
   const onChangeSearchInput = event => {
@@ -116,7 +116,7 @@ const FiltersGroup = props => {
   return (
     <div className="filters-group-container">
       {renderSearchInput()}
-      <ProfileDetails />
+      <ProfileCard />
       <hr className="horizontal-line" />
       {renderTypeOfEmployment()}
       <hr className="horizontal-line" />
