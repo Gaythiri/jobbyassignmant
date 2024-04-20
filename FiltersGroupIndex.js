@@ -33,7 +33,7 @@ const FiltersGroup = props => {
           className="search-button-container"
           onClick={getJobs}
         >
-          <BsSearch className="search-icon" />
+          <BsSearch className="search-icon" aria-label="search" />
         </button>
       </div>
     )
